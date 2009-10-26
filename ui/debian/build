@@ -1,0 +1,31 @@
+#!/bin/sh
+export VERSION=0.9.5
+rm -rf package
+mkdir -p package/Applications/scrobble.app/scrobbled
+mkdir -p package/DEBIAN
+mkdir -p package/System/Library/LaunchDaemons
+mkdir -p package/System/Library/CoreServices/SpringBoard.app
+#copy scrobble.app
+cp ../build/Release-iPhoneos/scrobble.app/*.nib  package/Applications/scrobble.app/
+cp ../build/Release-iPhoneos/scrobble.app/Info.plist  package/Applications/scrobble.app/
+cp ../build/Release-iPhoneos/scrobble.app/Icon.png  package/Applications/scrobble.app/
+cp ../build/Release-iPhoneos/scrobble.app/scrobble  package/Applications/scrobble.app/scrobble
+cp ../../build/Release-iPhoneos/launchctl.app/launchctl package/Applications/scrobble.app/
+#copy scrobbled
+cp ../../build/Release-iphoneos/scrobbled.app/scrobbled package/Applications/scrobble.app/scrobbled/
+cp ../../build/Release-iphoneos/scrobbled.app/Info.plist package/Applications/scrobble.app/scrobbled/
+#cp ../../build/Release-iphoneos/scrobbled.app/org.nodomain.scrobbled.plist package/Applications/scrobble.app/scrobbled/
+cp ../build/Release-iphoneos/scrobble.app/scrobbled/org.nodomain.scrobbled.plist package/System/Library/LaunchDaemons
+cp ../../FSO_*.png package/System/Library/CoreServices/SpringBoard.app
+cp ../../Default*.png package/System/Library/CoreServices/SpringBoard.app
+chown -R root:wheel package
+#chown root:admin package/Applications/scrobble.app/scrobble_
+#chmod 6755 package/Applications/scrobble.app/scrobble_
+chmod 4755 package/Applications/scrobble.app/launchctl
+cd package
+find Applications System  -type f | xargs md5sum >../package/debian/md5sums
+cd ..
+sed s/__VERSION__/$VERSION/g <control >package/DEBIAN/control
+cp preinst postinst prerm package/DEBIAN
+export COPY_EXTENDED_ATTRIBUTES_DISABLE=1
+dpkg-deb -b package scrobbl_${VERSION}.deb

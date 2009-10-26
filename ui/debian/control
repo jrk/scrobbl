@@ -1,0 +1,14 @@
+Package: org.chris-w.scrobble
+Name: Scrobbl
+Version: __VERSION__
+Provides: org.nodomain.scrobble
+Conflicts: org.nodomain.scrobble
+Replaces: org.nodomain.scrobble
+Section: Multimedia
+Architecture: iphoneos-arm
+Maintainer: Chris W <iphonescrobble@gmail.com>
+Author: Chris W <iphonescrobble@gmail.com>
+Homepage: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=scrobblData
+Depiction: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=scrobblData
+Description: 3.0 Only. Scrobble tracks to last.fm as they are played on your 3.0 iphone.
+dev: chrisw

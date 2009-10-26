@@ -1,0 +1,414 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		8E04DBBD0E57C1B200D10417 /* org.nodomain.scrobbled.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8E04DBBC0E57C1B200D10417 /* org.nodomain.scrobbled.plist */; };
+		8E48C3AC0E4E38B400651569 /* scrobbled.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E48C3A70E4E38B400651569 /* scrobbled.m */; };
+		981C5CE50FEF0A9F00D3E29A /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 981C5CE20FEF0A9F00D3E29A /* NSString+MD5.m */; };
+		981C5CE60FEF0A9F00D3E29A /* NSString+URLEscaped.m in Sources */ = {isa = PBXBuildFile; fileRef = 981C5CE40FEF0A9F00D3E29A /* NSString+URLEscaped.m */; };
+		981C5E350FF0092700D3E29A /* Scrobbler.m in Sources */ = {isa = PBXBuildFile; fileRef = 981C5E340FF0092700D3E29A /* Scrobbler.m */; };
+		986602190FF41E5C00AD9990 /* ScrobblerStatus.png in Resources */ = {isa = PBXBuildFile; fileRef = 986602180FF41E5C00AD9990 /* ScrobblerStatus.png */; };
+		986605AB0FF6ECBB00AD9990 /* StatusBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 986605AA0FF6ECBB00AD9990 /* StatusBarController.m */; };
+		986606180FF6F57500AD9990 /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = 986606170FF6F57500AD9990 /* Player.m */; };
+		986608A50FF7203E00AD9990 /* NSLogOverride.m in Sources */ = {isa = PBXBuildFile; fileRef = 986608A40FF7203E00AD9990 /* NSLogOverride.m */; };
+		98660B710FF9723500AD9990 /* launchctl.c in Sources */ = {isa = PBXBuildFile; fileRef = 98660B3B0FF95BDB00AD9990 /* launchctl.c */; };
+		989E89720FEE2BAC0040A8B2 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 989E89710FEE2BAC0040A8B2 /* MediaPlayer.framework */; };
+		989E8A050FEE445E0040A8B2 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 989E8A040FEE445E0040A8B2 /* SystemConfiguration.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1D6058910D05DD3D006BFB54 /* scrobbled.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = scrobbled.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		8E04DBBC0E57C1B200D10417 /* org.nodomain.scrobbled.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = org.nodomain.scrobbled.plist; sourceTree = "<group>"; };
+		8E48C3A70E4E38B400651569 /* scrobbled.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; path = scrobbled.m; sourceTree = "<group>"; };
+		8E48C3AA0E4E38B400651569 /* version.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = version.h; sourceTree = "<group>"; };
+		8E6D2D640E71EACB0014B5E7 /* shared.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = shared.h; sourceTree = "<group>"; };
+		8EE825050E4F729800CA6623 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		981C5CE10FEF0A9F00D3E29A /* NSString+MD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MD5.h"; sourceTree = "<group>"; };
+		981C5CE20FEF0A9F00D3E29A /* NSString+MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MD5.m"; sourceTree = "<group>"; };
+		981C5CE30FEF0A9F00D3E29A /* NSString+URLEscaped.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+URLEscaped.h"; sourceTree = "<group>"; };
+		981C5CE40FEF0A9F00D3E29A /* NSString+URLEscaped.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+URLEscaped.m"; sourceTree = "<group>"; };
+		981C5E330FF0092700D3E29A /* Scrobbler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Scrobbler.h; sourceTree = "<group>"; };
+		981C5E340FF0092700D3E29A /* Scrobbler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Scrobbler.m; sourceTree = "<group>"; };
+		986602180FF41E5C00AD9990 /* ScrobblerStatus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ScrobblerStatus.png; path = "../MobileScrobbler-1.4.4/ScrobblerStatus.png"; sourceTree = SOURCE_ROOT; };
+		986605A90FF6ECBB00AD9990 /* StatusBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatusBarController.h; sourceTree = "<group>"; };
+		986605AA0FF6ECBB00AD9990 /* StatusBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatusBarController.m; sourceTree = "<group>"; };
+		986606160FF6F57500AD9990 /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
+		986606170FF6F57500AD9990 /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
+		986608A40FF7203E00AD9990 /* NSLogOverride.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSLogOverride.m; sourceTree = "<group>"; };
+		986609790FF820A400AD9990 /* NSLogOverride.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSLogOverride.h; sourceTree = "<group>"; };
+		98660B3B0FF95BDB00AD9990 /* launchctl.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = launchctl.c; path = ../launchctl.c; sourceTree = "<group>"; };
+		98660B6B0FF9720800AD9990 /* launchctl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = launchctl.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		98660B6D0FF9720800AD9990 /* launchctl-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "launchctl-Info.plist"; sourceTree = "<group>"; };
+		989E89710FEE2BAC0040A8B2 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		989E8A040FEE445E0040A8B2 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = /System/Library/Frameworks/SystemConfiguration.framework; sourceTree = "<absolute>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
+				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
+				989E89720FEE2BAC0040A8B2 /* MediaPlayer.framework in Frameworks */,
+				989E8A050FEE445E0040A8B2 /* SystemConfiguration.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98660B690FF9720800AD9990 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				986608A40FF7203E00AD9990 /* NSLogOverride.m */,
+				986609790FF820A400AD9990 /* NSLogOverride.h */,
+				981C5E330FF0092700D3E29A /* Scrobbler.h */,
+				981C5E340FF0092700D3E29A /* Scrobbler.m */,
+				986606160FF6F57500AD9990 /* Player.h */,
+				986606170FF6F57500AD9990 /* Player.m */,
+				981C5CE10FEF0A9F00D3E29A /* NSString+MD5.h */,
+				981C5CE20FEF0A9F00D3E29A /* NSString+MD5.m */,
+				981C5CE30FEF0A9F00D3E29A /* NSString+URLEscaped.h */,
+				981C5CE40FEF0A9F00D3E29A /* NSString+URLEscaped.m */,
+				8E48C3A70E4E38B400651569 /* scrobbled.m */,
+				8E48C3AA0E4E38B400651569 /* version.h */,
+				8E6D2D640E71EACB0014B5E7 /* shared.h */,
+				98660B3B0FF95BDB00AD9990 /* launchctl.c */,
+				986605A90FF6ECBB00AD9990 /* StatusBarController.h */,
+				986605AA0FF6ECBB00AD9990 /* StatusBarController.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* scrobbled.app */,
+				98660B6B0FF9720800AD9990 /* launchctl.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+				98660B6D0FF9720800AD9990 /* launchctl-Info.plist */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				986602180FF41E5C00AD9990 /* ScrobblerStatus.png */,
+				8E04DBBC0E57C1B200D10417 /* org.nodomain.scrobbled.plist */,
+				8EE825050E4F729800CA6623 /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				989E8A040FEE445E0040A8B2 /* SystemConfiguration.framework */,
+				989E89710FEE2BAC0040A8B2 /* MediaPlayer.framework */,
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* scrobbled */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "scrobbled" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = scrobbled;
+			productName = scrobbled;
+			productReference = 1D6058910D05DD3D006BFB54 /* scrobbled.app */;
+			productType = "com.apple.product-type.application";
+		};
+		98660B6A0FF9720800AD9990 /* launchctl */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 98660B700FF9720F00AD9990 /* Build configuration list for PBXNativeTarget "launchctl" */;
+			buildPhases = (
+				98660B670FF9720800AD9990 /* Resources */,
+				98660B680FF9720800AD9990 /* Sources */,
+				98660B690FF9720800AD9990 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = launchctl;
+			productName = launchctl;
+			productReference = 98660B6B0FF9720800AD9990 /* launchctl.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "scrobbled" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* scrobbled */,
+				98660B6A0FF9720800AD9990 /* launchctl */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E04DBBD0E57C1B200D10417 /* org.nodomain.scrobbled.plist in Resources */,
+				986602190FF41E5C00AD9990 /* ScrobblerStatus.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98660B670FF9720800AD9990 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E48C3AC0E4E38B400651569 /* scrobbled.m in Sources */,
+				981C5CE50FEF0A9F00D3E29A /* NSString+MD5.m in Sources */,
+				981C5CE60FEF0A9F00D3E29A /* NSString+URLEscaped.m in Sources */,
+				981C5E350FF0092700D3E29A /* Scrobbler.m in Sources */,
+				986605AB0FF6ECBB00AD9990 /* StatusBarController.m in Sources */,
+				986606180FF6F57500AD9990 /* Player.m in Sources */,
+				986608A50FF7203E00AD9990 /* NSLogOverride.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98660B680FF9720800AD9990 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98660B710FF9723500AD9990 /* launchctl.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				"CODE_SIGN_IDENTITY[sdk=*]" = "iPhone Developer: Pwned";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Pwned";
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\\\"$(SDKROOT)$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks\\\"",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = scrobbled_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				PRODUCT_NAME = scrobbled;
+				"PROVISIONING_PROFILE[sdk=*]" = "8831619D-CC26-4374-84AC-6AD7FEDC9938";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "8831619D-CC26-4374-84AC-6AD7FEDC9938";
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				"CODE_SIGN_IDENTITY[sdk=*]" = "iPhone Developer: Pwned";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Pwned";
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\\\"$(SDKROOT)$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks\\\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = scrobbled_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				PRODUCT_NAME = scrobbled;
+				"PROVISIONING_PROFILE[sdk=*]" = "8831619D-CC26-4374-84AC-6AD7FEDC9938";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "8831619D-CC26-4374-84AC-6AD7FEDC9938";
+			};
+			name = Release;
+		};
+		98660B6E0FF9720F00AD9990 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Pwned";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
+				INFOPLIST_FILE = "launchctl-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					UIKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = launchctl;
+				SDKROOT = iphoneos2.0;
+			};
+			name = Debug;
+		};
+		98660B6F0FF9720F00AD9990 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Pwned";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
+				INFOPLIST_FILE = "launchctl-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					UIKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = launchctl;
+				SDKROOT = iphoneos2.0;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=*]" = "Don't Code Sign";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Don't Code Sign";
+				CODE_SIGN_RESOURCE_RULES_PATH = "";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = include;
+				INFOPLIST_EXPAND_BUILD_SETTINGS = NO;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				"PROVISIONING_PROFILE[sdk=*]" = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos3.0;
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=*]" = "Don't Code Sign";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Don't Code Sign";
+				CODE_SIGN_RESOURCE_RULES_PATH = "";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = include;
+				PREBINDING = NO;
+				"PROVISIONING_PROFILE[sdk=*]" = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "scrobbled" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		98660B700FF9720F00AD9990 /* Build configuration list for PBXNativeTarget "launchctl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98660B6E0FF9720F00AD9990 /* Debug */,
+				98660B6F0FF9720F00AD9990 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "scrobbled" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

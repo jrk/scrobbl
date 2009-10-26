@@ -1,0 +1,4 @@
+#!/bin/bash
+echo 'Stopping Scrobbled...'
+/bin/launchctl unload /System/Library/LaunchDaemons/org.nodomain.scrobbled.plist &>/dev/null
+exit 0

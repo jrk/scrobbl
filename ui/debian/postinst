@@ -1,0 +1,5 @@
+#!/bin/sh
+if [ "$1" = "configure" ]; then
+  /Applications/scrobble.app/launchctl load /System/Library/LaunchDaemons/org.nodomain.scrobbled.plist
+fi
+exit 0

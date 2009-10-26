@@ -1,0 +1,9 @@
+org.chris-w.scrobbl (0.9.4) unstable; urgency=low
+
+	* Add status icons (requires respring).
+	* Remove unstable notifications from player,
+	  slightly less responsive on each track but
+	  should be more stable to player restarts.
+	* Refactored code to be more sane!	
+  
+-- Chris W <iphonescrobble@gmail.com> Sun Jun 28 01:58:15 PDT 2009
